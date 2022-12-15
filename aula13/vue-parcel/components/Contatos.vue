@@ -8,7 +8,7 @@
 
     <div class="list-group">
       <p v-if="numContatos <= 0">Adicione um contato na agenda...</p>
-      <h1 v-else>Há {{ numContatos }} contatos na agenda.</h1>
+      <p v-else>Há {{ numContatos }} contatos na agenda.</p>
 
       <div class="list-group-item" v-for="(contato, index) in contatos" v-bind:key="index">
         <span class="nome_class"
